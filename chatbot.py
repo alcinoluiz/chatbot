@@ -27,6 +27,7 @@ class ChatBot(object):
 
 	def createResponse(self,key):
 		response = self.getKey(key)
+		return response
 
 	def readKb(self):
 		fo = open("kb.txt", "a+")
@@ -42,7 +43,8 @@ class ChatBot(object):
 	
 	def getKey(self, key):
 		rn = randint(0,len(self.kb[key])-1)
-		print self.kb[key][rn]
+		return self.kb[key][rn]
+	
 	def learnMode(self):
 		question = raw_input("pergunta: ")
 		answer = raw_input("resposta: ")
@@ -80,6 +82,7 @@ class ChatBot(object):
 				self.kb[values[0]] = self.kb[values[1]]
 			else:
 				self.kb[values[0]] = tuple(values[1:])
+	
 	def __init__(self, name):
 		self.name = name
 		self.kb = {}
