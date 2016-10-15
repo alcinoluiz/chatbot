@@ -11,8 +11,6 @@ class ChatBot(object):
 		for key in self.kb_keys:
 			s1 = user_input.split(" ")
 			s2 = key[0].split(" ")
-			# if len(s1) == len(s2):
-			# print "same len"
 			final_index = len(s1) if len(s1) < len(s2) else len(s2)
 			for i in range(final_index):
 				if s1[i] == s2[i]:
@@ -21,8 +19,7 @@ class ChatBot(object):
 				bigger = key
 			if len(bigger) > 0:
 				if bigger[1] < key[1]:
-					bigger = key
-		# print self.kb_keys
+					bigger = key		
 		if len(bigger) > 0:
 			return self.createResponse(bigger[0])
 		else:
@@ -70,10 +67,7 @@ class ChatBot(object):
 			elif user_input == "/learn":
 				self.writeKb()
 				# learnMode()
-			elif user_input == "aaaa":
-				print "aaa"
 			else:
-				# self.match(user_input)
 				resp = self.macthKeys(user_input)
 				print resp
 			
@@ -91,7 +85,6 @@ class ChatBot(object):
 		self.kb = {}
 		self.kb_keys = []
 		lines = self.readKb()
-		# print lines
 		self.startKb(lines)
 
 peter = ChatBot("Peter")
