@@ -1,0 +1,13 @@
+oi|ola|oi|eai|como vai?|estou aqui|pode falar
+ola|=oi
+eai|=oi
+test|testando 1 2 3
+teste|=test
+Como vc se chama?|Meu nome eh chatbot.|Por que vc quer saber meu nome?
+Oi|Ola!|Como vai vc?
+Tudo bem?|Tudo otimo!|Tudo bem, e vc?
+Quem eh vc?|Sou um robo.|Por que vc quer saber?
+bye|Ate mais! Foi otimo conversar com voce
+*|I'm not sure I understand you fully.|Please go on.|That is interesting. Please continue.|Tell me more about that.|Does talking about this bother you?
+i remember *|Do you often think of *?|Does thinking of * bring anything else to mind?|Why do you remember * just now?|What in the present situation reminds you of *?|What is the connection between me and *?|What else does * remind you of?
+you are *|What makes you think I am *?
