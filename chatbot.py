@@ -21,12 +21,17 @@ class ChatBot(object):
 				if bigger[1] < key[1]:
 					bigger = key		
 		if len(bigger) > 0:
-			return self.createResponse(bigger[0])
+			return self.createResponse(bigger[0], user_input)
 		else:
 			return "Nao ha resposta para isso."
 
-	def createResponse(self,key):
+	def createResponse(self,key, user_input):
 		response = self.getKey(key)
+		if("*" in key):
+			key = key.replace('*', '')
+			star = user_input.replace(key, '')
+			response = response.replace('*', star)
+			return response
 		return response
 
 	def readKb(self):
