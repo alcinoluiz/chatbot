@@ -26,10 +26,16 @@ class ChatBot(object):
 			return "Nao ha resposta para isso."
 
 	def createResponse(self,key, user_input):
+		
 		response = self.getKey(key)
+		
 		if("*" in key):
 			key = key.replace('*', '')
-			star = user_input.replace(key, '')
+			
+			for txt in key.split(' '):
+				user_input = user_input.replace(txt, '')
+			star = user_input.strip()
+			
 			response = response.replace('*', star)
 			return response
 		return response

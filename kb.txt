@@ -13,3 +13,11 @@ i remember *|Do you often think of *?|Does thinking of * bring anything else to 
 you are *|What makes you think I am *?
 hi|hello|hi|i'm here
 hello|=hi
+qual sua cor preferida?|n tenho uma cor prefrerida|vc poderia me dizer a sua
+was i *|What if you were *?|Do you think you were *?|Were you *?|What would it mean if you were *?|What does '*' suggest to you?
+i was *|Were you really?|Why do you tell me you were * now?|Perhaps I already know you were *.
+i am *|Is it because you are * that you came to me?|How long have you been *?|Do you believe it is normal to be *?|Do you enjoy being *?|Do you know anyone else who is *?
+i can not *|How do you know that you can't *?|Have you tried?|Perhaps you could * now.|Do you really want to be able to *?|What if you could *?
+i do not *|Don't you really *?|Why don't you *?|Do you wish to be able to *?|Does that trouble you?
+i feel *|Tell me more about such feelings.|Do you often feel *?|Do you enjoy feeling *?|Of what does feeling * remind you?
+i * you|Perhaps in your fantasies we * each other.|Do you wish to * me?|You seem to need to * me.|Do you * anyone else?
