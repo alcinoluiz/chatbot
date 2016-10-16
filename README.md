@@ -1,4 +1,4 @@
-# chatbot
+# Chatbot
 
 Simple python chatbot example.
 
@@ -9,10 +9,10 @@ The knowledge base line is like that:<br>
 The first term is the key and the another ones is the answer (that will be choosen randomly).<br><br>
 
 #Use the same answer
-To use the same answer for different key just put <new key>|=<reference key><br>
+To use the same answer for different key just put new key|=reference key<br>
 	hi|hello|hi|i'm here<br>
 	hello|=hi<br>
-Now, 'hi' and 'hello' has te same answer.<br><br>
+Now, 'hi' and 'hello' has the same answer.<br><br>
 
 #Star Match
 Star match is bascically<br>
