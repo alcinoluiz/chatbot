@@ -1,8 +1,15 @@
 #!/usr/bin/python
 import time
+import os
 from random import randint
+from gtts import gTTS
 
 class ChatBot(object):
+	def talk(self, txt):
+		tts = gTTS(text=txt, lang=self.lang)
+		tts.save("txt.mp3")
+		os.system('mpg123 txt.mp3 &> /dev/null')
+
 	def macthKeys(self, user_input):
 		self.kb_keys = []
 		for key in self.kb.keys():
@@ -23,7 +30,7 @@ class ChatBot(object):
 		if len(bigger) > 0:
 			return self.createResponse(bigger[0], user_input)
 		else:
-			return "Nao ha resposta para isso."
+			return self.getKey('*')
 
 	def createResponse(self,key, user_input):
 		
@@ -71,7 +78,14 @@ class ChatBot(object):
 	def chat(self):
 		user_input = ""
 		run =  True
-		print "Ola, eu sou ", self.name
+		if self.lang == 'en':
+			hi = "Hi, I'm " + self.name
+			self.talk(hi)
+			print hi
+		elif self.lang == 'pt-br':
+			oi = "Ola, eu sou "+ self.name
+			self.talk(oi)
+			print oi
 		while run:
 			user_input = raw_input("> ")
 			if user_input == "tchau" or user_input == "sair":
@@ -82,6 +96,7 @@ class ChatBot(object):
 				# learnMode()
 			else:
 				resp = self.macthKeys(user_input)
+				self.talk(resp)
 				print resp
 			
 	def startKb(self,chatList):
@@ -94,12 +109,14 @@ class ChatBot(object):
 			else:
 				self.kb[values[0]] = tuple(values[1:])
 	
-	def __init__(self, name):
+	def __init__(self, name, lang='en', kbFile='kb.txt'):
 		self.name = name
 		self.kb = {}
 		self.kb_keys = []
+		self.lang = lang
+		self.kbFile = kbFile
 		lines = self.readKb()
 		self.startKb(lines)
 
-peter = ChatBot("Peter")
-peter.chat()
+samantha = ChatBot("Samantha",'en')
+samantha.chat()
