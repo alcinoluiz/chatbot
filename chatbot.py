@@ -9,11 +9,13 @@ class ChatBot(object):
 			self.kb_keys.append([key,0])
 		bigger = []
 		for key in self.kb_keys:
-			s1 = user_input.split(" ")
-			s2 = key[0].split(" ")
-			final_index = len(s1) if len(s1) < len(s2) else len(s2)
-			for i in range(final_index):
-				if s1[i] == s2[i]:
+			if len(user_input.split(" ")) > 1:
+				input_split = user_input.split(" ")
+				for string in input_split:
+					if string in key[0]:
+						key[1] += 1
+			else:
+				if user_input in key[0]:
 					key[1] += 1
 			if len(bigger) < 1 and key[1] > 0:
 				bigger = key
@@ -23,7 +25,7 @@ class ChatBot(object):
 		if len(bigger) > 0:
 			return self.createResponse(bigger[0], user_input)
 		else:
-			return "Nao ha resposta para isso."
+			return self.getKey("*")
 
 	def createResponse(self,key, user_input):
 		
@@ -41,16 +43,26 @@ class ChatBot(object):
 		return response
 
 	def readKb(self):
-		fo = open("kb.txt", "a+")
+		fo = open("kb.txt", "r")
 		lineList = []
 		for line in fo:
 			lineList.append(line)
 		return lineList
+		fo.close()
 
 	def writeKb(self):
 		keysList = list(self.kb.keys())
+		lines = []
+		fo = open('kb.txt', 'w')
 		for key in keysList:
-			print key + "-" + str(self.kb[key])
+			line = key
+			for value in self.kb[key]:
+				line += "|" + value
+			fo.write(line+"\n")
+			lines.append(line)
+		# print lines
+		fo.close()
+		
 	
 	def getKey(self, key):
 		rn = randint(0,len(self.kb[key])-1)
@@ -76,10 +88,10 @@ class ChatBot(object):
 			user_input = raw_input("> ")
 			if user_input == "tchau" or user_input == "sair":
 				run = False
+				self.writeKb()
 				print "Ate a proxima"
 			elif user_input == "/learn":
-				self.writeKb()
-				# learnMode()
+				self.learnMode()				
 			else:
 				resp = self.macthKeys(user_input)
 				print resp

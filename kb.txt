@@ -1,23 +1,26 @@
-oi|ola|oi|eai|como vai?|estou aqui|pode falar
-ola|=oi
-eai|=oi
-test|testando 1 2 3
-teste|=test
-Como vc se chama?|Meu nome eh chatbot.|Por que vc quer saber meu nome?
-Oi|Ola!|Como vai vc?
-Tudo bem?|Tudo otimo!|Tudo bem, e vc?
+ola|ola|oi|eai|como vai?|estou aqui|pode falar
 Quem eh vc?|Sou um robo.|Por que vc quer saber?
-bye|Ate mais! Foi otimo conversar com voce
-*|I'm not sure I understand you fully.|Please go on.|That is interesting. Please continue.|Tell me more about that.|Does talking about this bother you?
-i remember *|Do you often think of *?|Does thinking of * bring anything else to mind?|Why do you remember * just now?|What in the present situation reminds you of *?|What is the connection between me and *?|What else does * remind you of?
-you are *|What makes you think I am *?
-hi|hello|hi|i'm here
-hello|=hi
-qual sua cor preferida?|n tenho uma cor prefrerida|vc poderia me dizer a sua
-was i *|What if you were *?|Do you think you were *?|Were you *?|What would it mean if you were *?|What does '*' suggest to you?
 i was *|Were you really?|Why do you tell me you were * now?|Perhaps I already know you were *.
-i am *|Is it because you are * that you came to me?|How long have you been *?|Do you believe it is normal to be *?|Do you enjoy being *?|Do you know anyone else who is *?
-i can not *|How do you know that you can't *?|Have you tried?|Perhaps you could * now.|Do you really want to be able to *?|What if you could *?
+alfa|omega
 i do not *|Don't you really *?|Why don't you *?|Do you wish to be able to *?|Does that trouble you?
+i am *|Is it because you are * that you came to me?|How long have you been *?|Do you believe it is normal to be *?|Do you enjoy being *?|Do you know anyone else who is *?
+*|I'm not sure I understand you fully.|Please go on.|That is interesting. Please continue.|Tell me more about that.|Does talking about this bother you?
+i can not *|How do you know that you can't *?|Have you tried?|Perhaps you could * now.|Do you really want to be able to *?|What if you could *?
+test|testando 1 2 3
+bye|Ate mais! Foi otimo conversar com voce
+eai|ola|oi|eai|como vai?|estou aqui|pode falar
+criador|Alcino Luiz|deus
+Oi|Ola!|Como vai vc?
+you are *|What makes you think I am *?
+Tudo bem?|Tudo otimo!|Tudo bem, e vc?
+Como vc se chama?|Meu nome eh chatbot.|Por que vc quer saber meu nome?
+hi|hello|hi|i'm here
+teste|testando 1 2 3
 i feel *|Tell me more about such feelings.|Do you often feel *?|Do you enjoy feeling *?|Of what does feeling * remind you?
 i * you|Perhaps in your fantasies we * each other.|Do you wish to * me?|You seem to need to * me.|Do you * anyone else?
+was i *|What if you were *?|Do you think you were *?|Were you *?|What would it mean if you were *?|What does '*' suggest to you?
+oi|ola|oi|eai|como vai?|estou aqui|pode falar
+qual sua cor preferida?|n tenho uma cor prefrerida|vc poderia me dizer a sua cor preferida
+em qual linguagem vc foi programado?|fui programado em python
+i remember *|Do you often think of *?|Does thinking of * bring anything else to mind?|Why do you remember * just now?|What in the present situation reminds you of *?|What is the connection between me and *?|What else does * remind you of?
+hello|hello|hi|i'm here
